@@ -6,6 +6,7 @@ $(document).ready(function(){
             nextEl: ".soNext1",
             prevEl: ".soPrev1",
         },
+        loop:true,
         breakpoints: {
             // when window width is >= 320px
             320: {
@@ -22,6 +23,7 @@ $(document).ready(function(){
             nextEl: ".soNext2",
             prevEl: ".soPrev2",
         },
+        loop:true,
         breakpoints: {
             // when window width is >= 320px
             320: {
@@ -38,6 +40,7 @@ $(document).ready(function(){
             nextEl: ".soNext3",
             prevEl: ".soPrev3",
         },
+        loop:true,
         breakpoints: {
             // when window width is >= 320px
             320: {
