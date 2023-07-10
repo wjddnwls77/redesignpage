@@ -1,0 +1,26 @@
+/* reset */
+*{margin:0;padding:0;}
+a{text-decoration: none;color:inherit}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: normal;}
+b,strong{font-weight: normal;}
+i,em,address{font-style: normal;}
+ul,ol {list-style: none;}
+
+/* common */
+html{
+    font-size:14px ;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+@font-face {
+    font-family: "stencil";
+    src: url("../font/stencilla.ttf");
+}
+@font-face {
+    font-family: "Cafe2";
+    src: url(../font/Cafe24Shiningstar.ttf)
+}
+@font-face{
+    font-family: "nanum";
+    src: url(../font/nanum-square/)
+}

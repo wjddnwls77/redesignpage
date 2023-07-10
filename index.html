@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab series</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/mo.css">
+    <link rel="stylesheet" href="./css/pc.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- jQ -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/slider.js"></script>
+    <!-- slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./font-awesome/css/all.min.css">
+</head>
+<body>
+    <div class="blackcover"></div>
+    <header class="mo">
+        <div class="innerheader">
+               <h1 class="mainLogo"><a href="./main.html">lab series</a></h1>
+                <div class="btnMoMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+                
+            </div>
+        </div>
+        <nav>
+            <ul class="gnb">
+                <li><a href="#">피부 고민별</a>
+                    <ul>
+                        <li><a href="">안티에이지</a></li>
+                        <li><a href="#">수분 활력공급</a></li>
+                        <li><a href="#">올인원 케어</a></li>
+                        <li><a href="#">유분&피지 조절</a></li>
+                        <li><a href="#">피부보정</a></li>
+                        <li><a href="#">고보습 활력</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">스킨케어</a>
+                    <ul>
+                        <li><a href="#">클렌저</a></li>
+                        <li><a href="#">원터로션(토너)</a></li>
+                        <li><a href="#">수분 자외선</a></li>
+                        <li><a href="#">아이&립 케어</a></li>
+                        <li><a href="#">세럼</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">베스트 셀러</a></li>
+                <li><a href="#">이벤트&기획전</a></li>
+                <li><a href="#">브랜드 소개</a></li>
+            </ul>
+           <div>
+                <ul class="login">
+                    <li><a href="#"><img src="./img/SVG/login.svg" alt="로그인"><p>로그인</p></a></li>
+                    <li><a href="#"><img src="./img/SVG/bag.svg" alt="장바구니"><p>장바구니</p></a></li>
+                    <li><a href="#"><img src="./img/SVG/customer.svg" alt="고객센터"><p>고객센터</p></a></li>
+                </ul>
+           </div>
+        </nav> 
+    </header>
+    <header class="pc">
+        <div class="innerheader">
+            <div>
+                <h1 class="mainLogo">
+                    <a href="./main.html">lab series</a>
+                </h1>
+            </div>
+            <div class="menuLeft">
+                <ul class="login">
+                    <li><a href="#"><img src="./img/SVG/login.svg" alt="로그인"><p>로그인</p></a></li>
+                    <li><a href="#"><img src="./img/SVG/bag.svg" alt="장바구니"><p>장바구니</p></a></li>
+                </ul> 
+                <div class="btnMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>
+            </div>
+        </div>
+        <nav class="gnb">
+            <ul>
+                <li><a href="#">피부 고민별</a>
+                    <ul>
+                        <li><a href="">안티에이지</a></li>
+                        <li><a href="#">수분 활력공급</a></li>
+                        <li><a href="#">올인원 케어</a></li>
+                        <li><a href="#">유분&피지 조절</a></li>
+                        <li><a href="#">피부보정</a></li>
+                        <li><a href="#">고보습 활력</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">스킨케어</a>
+                    <ul>
+                        <li><a href="#">클렌저</a></li>
+                        <li><a href="#">원터로션(토너)</a></li>
+                        <li><a href="#">수분 자외선</a></li>
+                        <li><a href="#">아이&립 케어</a></li>
+                        <li><a href="#">세럼</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">베스트 셀러</a></li>
+                <li><a href="#">이벤트&기획전</a>
+                    <ul>
+                        <li><a href="#">상품리뷰</a></li>
+                        <li><a href="#">진행중인 이벤트</a></li>
+                        <li><a href="#">이벤트 당첨자</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">브랜드 소개</a></li>
+                <li><a href="#">고객센터</a>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">1:1문의하기</a></li>
+                    </ul>
+                </li>
+            </ul>
+           
+        </nav>
+    </header>     
+        <main>
+            <div class="mainStation">
+                <ul class="mainTrain swiper-wrapper">
+                    <li class="swiper-slide">
+                        <banner class="videoBanner">
+                            <video autoplay muted loop>
+                                <source src="./viedo/labVideo.mp4" type="video/mp4">
+                            </video>
+                        </banner>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./img/banner.png" alt="banner">
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./img/banner/mainBanner3.jpg" alt="수분자석 하이드라 2G 테크놀로지">
+                        <div class="mainBanner3">
+                            <h2>수분자석 하이드라 2G 테크놀로지</h2>
+                            <p>데일리 레스큐 워터로션 구매시,<br>
+                            동일 제품 60ml & 정품 스프레이 펌프 증정</p>
+                            <a href="#">구매하기</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="controlerMain">
+                    <a href="#"class="btnPrev">prev</a>
+                    <a href="#"class="btnNext">next</a>
+                </div>
+            </div>
+                <div class="mo_MainStation">
+                    <ul class="mo_MainTrain swiper-wrapper">
+                        <li class="swiper-slide">
+                            <banner class="videoBanner">
+                                <video autoplay muted loop>
+                                    <source src="./viedo/labVideo.mp4" type="video/mp4">
+                                </video>
+                            </banner>
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="./img/SVG/SVG/mainS_mo.svg" alt="banner">
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="./img/LS.mo.png" alt="수분자석 하이드라 2G 테크놀로지">
+                            <div class="mo_MainBanner3">
+                                <h2>수분자석 하이드라 2G 테크놀로지</h2>
+                                <p>데일리 레스큐 워터로션 구매시,<br>
+                                동일 제품 60ml & 정품 스프레이 펌프 증정</p>
+                                <a href="#">구매하기</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="controlerMain">
+                        <a href="#"class="btnPrev">prev</a>
+                        <a href="#"class="btnNext">next</a>
+                    </div>
+            </div>
+            <div class="about">
+                <div class="mainContents">
+                    <h2 class="mLtR">lab<br>seires</h2>
+                    <p class="mTtB">30년 이상의 지속적인 연구와 개발을 통해 남성<br> 피부를 위한 솔루션 개발을 지금 만나보세요.</p>
+               </div> 
+                <div class="mainImgslider aboutStation" >
+                    <ul class="aboutTrain">
+                    <li class="sideImg0">
+                        <img src="./img/person/waterLotionMen.jpg" alt="워터로션">
+                        <h3>water lotion</h3>
+                        <a href="#">바로가기</a>
+                    </li>
+                    <li class="sideImg1">
+                        <img  src="./img/person/cleanserMen.jpg" alt="클렌져">
+                        <h3>cleanser</h3>
+                        <a href="#">바로가기</a>
+                    </li>
+                    <li class="sideImg2">
+                         <img src="./img/person/moistureMen.png" alt="모이스쳐">
+                         <h3>moisture</h3>
+                        <a href="#">바로가기</a>
+                    </li>
+                    </ul>
+                    <div class="miCont">
+                        <span class="mi_prev">prev</span>
+                        <span class="mi_next">next</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="aboutContent">
+                <h3 class="mTtB">모든 남성은 다릅니다.</h3>
+                <p class="mTtB">1987년부터 랩 시리즈는 남성 피부만의 특성을<br> 이해하는 전담 LAB과 함께 시작하였습니다.</p>
+                <p class="mTtB">랩 시리즈는 남성의 피부를 개선하기 위한<br>6가지 전용 시리즈 제품인 데일리 레스, 올인원, 오일<br>컨트롤 ,안티에이징 맥스의 새로운 포장을 선보입니다.</p>
+            </div>
+            <div class="bestAll">
+                <div class="best">
+                <h2>best sellers</h2>
+                <p>랩 시리즈 베스트셀러 
+                    제품을 만나보세요.</p>
+                </div>
+                <div class="bestStation">
+                    <ul class="bestTrain">
+                    <li>
+                        <a href="./bestseller.html">
+                            <img src="./img/bestseller/BEST1.png" alt="">
+                            <div class="productName">
+                                <h3>탄력로션 SIZE UP 세트</h3>
+                                <p>76,000원</p>
+                            </div>
+                        </a>
+                        <div class="bestBtn">
+                            <a href="#">
+                            <img src="./img/SVG/heartBtn.svg" alt=""></a>
+                            <a href="#">
+                            <img src="./img/SVG/plusBtn.svg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./bestseller.html">
+                            <img src="./img/bestseller/BEST2.png" alt="워터로션 SIZE UP 세트">
+                            <div class="productName">
+                                <h3>워터로션 SIZE UP 세트</h3>
+                                <p>58,000원</p>
+                            </div>
+                     </a>
+                     <div class="bestBtn">
+                        <a href="#">
+                        <img src="./img/SVG/heartBtn.svg" alt=""></a>
+                        <a href="#">
+                        <img src="./img/SVG/plusBtn.svg" alt="">
+                        </a>
+                    </div>
+                    </li>
+                    <li>
+                        <a href="./bestseller.html">
+                            <img src="./img/bestseller/BEST3.png" alt="맥스 LS 로션 세트">
+                            <div class="productName">
+                                <h3>맥스 LS 로션 세트</h3>
+                                <p>₩116,000원</p>
+                            </div>
+                        </a>
+                        <div class="bestBtn">
+                            <a href="#">
+                            <img src="./img/SVG/heartBtn.svg" alt=""></a>
+                            <a href="#">
+                            <img src="./img/SVG/plusBtn.svg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./bestseller.html">
+                            <img src="./img/bestseller/BEST4.png" alt="BB 틴티드 모이스춰라이저">
+                            <div class="productName">
+                                <h3>BB 틴티드 모이스춰라이저 </h3>
+                                <p>71,000원</p>
+                            </div>
+                        </a>
+                        <div class="bestBtn">
+                            <a href="#">
+                            <img src="./img/SVG/heartBtn.svg" alt=""></a>
+                            <a href="#">
+                            <img src="./img/SVG/plusBtn.svg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./bestseller.html">
+                            <img src="./img/bestseller/BEST7.png" alt="그루밍 쿨링 쉐이브 크림 기획 세트">
+                            <div class="productName">
+                                <h3>그루밍 쿨링 쉐이브 크림 기획 세트</h3>
+                                <p>₩55,000원</p>
+                            </div>
+                        </a>
+                        <div class="bestBtn">
+                            <a href="#">
+                            <img src="./img/SVG/heartBtn.svg" alt=""></a>
+                            <a href="#">
+                            <img src="./img/SVG/plusBtn.svg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./bestseller.html">
+                            <img src="./img/bestseller/BEST6.png" alt="멀티워시 SIZE UP 세트">
+                            <div class="productName">
+                                <h3>멀티워시 SIZE UP 세트</h3>
+                                <p>₩43,000원</p>
+                            </div>
+                        </a>
+                        <div class="bestBtn">
+                            <a href="#">
+                            <img src="./img/SVG/heartBtn.svg" alt=""></a>
+                            <a href="#">
+                            <img src="./img/SVG/plusBtn.svg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+                <div class="controlerBest">
+                    <a href="#" class="bestPrev">prev</a>
+                    <a href="#" class="bestNext">next</a>
+                </div>
+                <div class="slideLine">
+                    <div></div>
+                </div>
+            </div>
+            <div class="skinSolution">
+                <h2>skin solution</h2>
+                <p>랩 시리즈는 연구를 기반으로 맞춤솔루션을 제공합니다.</p>
+                <a href="#">more</a>
+                <h3>SCROLL</h3>
+            </div>
+            <div class="skinMenu">
+                <ol class="skinList">
+                    <li class="skinOne mTtB">
+                        <div class="skinProduct">
+                            <img src="./img/product/Green.png" class="mBtT" alt="오일 컨트롤 클레이 클렌저 & 마스크 100ML">
+                            <span class="deco"></span>
+                        </div>
+                        <div class="skinContents sc1 mLtR">
+                            <h3>오일 컨트롤 클레이<br> 클렌저 & 마스크 100ML</h3>
+                            <p>문제성 및 여드름 피부인 남성을 위한 제품으로<br>세안 및 디톡스를 한 번에 해결해주는<br>클레이 마스크입니다.</p>
+                            <p class="price">43,000원</p>
+                            <a href="#">더보기</a>
+                        </div>
+                    </li>
+                    <li class="skinTwo mTtB">
+
+                        <div class="skinContents 
+                        Left sc2 mLtR">
+                            <h3>데일리 레스큐<br> 하이드레이팅 에멀전 50ML</h3>
+                            <p>산뜻하게 빨리 흡수되는 데일리 레스큐<br> 하이드레이팅 에멀전은 수분을 피부에 잠가주는 <br>포뮬러로 72시간 동안 수분을 유지합니다.</p>
+                            <p class="price">59,000원</p>
+                            <a href="#" class="colorTWO">더보기</a>
+                        </div>
+                        <div class="skinProduct Two ">
+                            <img src="./img/product/removebg .png" class="mBtT" alt="데일리 레스큐 하이드레이팅 에멀전 50ML">
+                            <span class="deco Second"></span>
+                         </div>
+                    </li>
+                    <li class="skinThree mTtB">
+                        <div class="skinProduct Three ">
+                            <img src="./img/product/masLotion.png" class="mBtT" alt="안티-에이지 맥스LS 워터로션 200ML">
+                            <span class="deco Third"></span>
+                        </div>
+                        <div class="skinContents sc3 mLtR">
+                            <h3>안티-에이지 맥스LS<br> 워터로션 200ML</h3>
+                            <p>랩 시리지 최고의 남성용 안티-에이징<br> 워터 로션으로 피부를 밝고 화사하게 표현해 보십시오.<br>피부의 수분 장벽을 잡아주면서 피부를 개선 해줍니다.</p>
+                            <p class="price">80,000원</p>
+                            <a href="#" class="colorThree">더보기</a>
+                        </div>
+                    </li> 
+                </ol>
+            </div>
+            <div class="event">
+                <h2>랩 시리즈 공식몰 <span>단독 혜택!!</span></h2>
+                <div class="eventSliderBanner swiper">
+                 <ul class="eventTrain swiper-wrapper">
+                    <li class="swiper-slide"> 
+                        <img class="review"src="./img/banner/banner1.png" alt="상품후기 EVENT">
+                        <section class="train1">
+                            <h3><i class="fa-solid fa-gift"></i> 상품후기 EVENT</h3>
+                            <p>랩 시리즈 공식몰에 후기를 작성해 주신<br> 모든 분들께 드리는 워터 로션을 증정합니다!</p>
+                            <a href="#">MORE</a>
+                        </section>
+                        <div class="bannerImg">
+                            <img class="bannerOne"src="./img/product/greenLotion.png" alt="상품후기 EVENT">
+                            <img class="bannerTwo"src="./img/product/smallGreen.png" alt="상품후기 EVENT">
+                        </div>
+                    </li>     
+                    <li class="swiper-slide"> 
+                        <section class="train2">
+                            <h3><span>수분에너지를 끌어당겨 빠르게 가두는<br></span> 하이드라 2G 테크놀로지</h3>
+                            <p class="cafe">똑똑하게 해결하는 환절기 피부관리!</p>
+                            <p>데일리 레스큐 워터로션 200ml 구매 시,<br> 동일 제품60ml & 정품 스트레이 펌프 증정!</p>
+                            <a href="#">구매하기</a>
+                            <img class="blueLotion" src="./img/product/banner3.png"  alt="수분에너지를 끌어당겨 빠르게 가두는 하이드라 2G 테크놀로지" >
+                    </section>             
+                    </li> 
+                    <li class="swiper-slide">
+                        <section class="train3">
+                            <div class="Contents3">
+                                <h4>"시간의 흔적에 맞서는 압도적인 안티에이징 파워"</h4>
+                                <h3>랩 시리즈<br> 맥스 LS 블랙  로션</h3>
+                                <p>안티에이지 맥스 LS 로션 구매 시,<br> <b>맥스 LS 대용량 샘플 3종 증정!</b></p>
+                                <a class="miniOne" href="#">116,000원</a>
+                                <a class="miniTwo" href="#">구매하기</a>
+                            </div>
+                            <img class="review2"src="./img/banner/banner2.png" alt="랩 시리즈 맥스 LS 블랙  로션">   
+                            <img class="blackLotion" src="./img/product/banner2.png" alt="blackLotion"> 
+                        </section>
+                    </li>
+                </ul>
+                </div>
+                <div class="moEventSliderBanner swiper">
+                    <ul class="moEventTrain swiper-wrapper">
+                       <li class="swiper-slide"> 
+                           <img class="review" src="./img/SVG/eventbanner1.svg" alt="상품후기 EVENT">
+                           <section class="train1">
+                               <h3><i class="fa-solid fa-gift"></i> 상품후기 EVENT</h3>
+                               <p>랩 시리즈 공식몰에 후기를 작성해 주신<br> 모든 분들께 드리는 워터 로션을 증정합니다!</p>
+                               <a href="#">MORE</a>
+                           </section>
+                           <div class="bannerImg">
+                               <img class="bannerOne"src="./img/product/greenLotion.png" alt="상품후기 EVENT">
+                               <img class="bannerTwo"src="./img/product/smallGreen.png" alt="상품후기 EVENT">
+                           </div>
+                       </li>     
+                       <li class="swiper-slide"> 
+                           <section class="train2">
+                               <h3><span>수분에너지를 끌어당겨 빠르게 가두는<br></span> 하이드라 2G 테크놀로지</h3>
+                               <p class="cafe">똑똑하게 해결하는 환절기 피부관리!</p>
+                               <p>데일리 레스큐 워터로션 200ml 구매 시,<br> 동일 제품60ml & 정품 스트레이 펌프 증정!</p>
+                               <a href="#">구매하기</a>
+                       </section>             
+                       </li> 
+                       <li class="swiper-slide">
+                           <section class="train3">
+                               <div class="Contents3">
+                                   <h4>"시간의 흔적에 맞서는 압도적인 안티에이징 파워"</h4>
+                                   <h3>랩 시리즈<br> 맥스 LS 블랙  로션</h3>
+                                   <p>안티에이지 맥스 LS 로션 구매 시,<br> <b>맥스 LS 대용량 샘플 3종 증정!</b></p>
+                                   <a class="miniOne" href="#">116,000원</a>
+                                   <a class="miniTwo" href="#">구매하기</a>
+                               </div>
+                               <img class="review2"src="./img/SVG/eventbanner3.svg" alt="랩 시리즈 맥스 LS 블랙 로션">    
+                           </section>
+                       </li>
+                   </ul>
+                   </div>      
+                <div class="bannerLine">
+                </div>
+            </div>
+        </main> 
+        <footer> 
+            <div class="footerTop">
+                <section class="footerTleft">
+                    <ul class="leftOne">
+                        <li><a href="#">서비스이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="footerBottom">
+                <section>
+                    <div class="address">
+                        <address>이엘씨에이한국(유)대표 Teng,Hsiao-Hua</address>
+                        <address>서울시 강남구 강남대로 382(역삼동)메리츠타워,06232</address>
+                    </div>
+                    <div>
+                    <p>고객관리 지원팀:02-6971-3224</p>
+                    <p>consumercare@kr.labseries.com</p>
+                    <a href="#">주문조회</a>
+                    <p>호스팅서비스 사업자:(주)엘지유플러스</p>
+                </div>
+                </section>
+                <section>
+                    <dl class="company">
+                        <dt>사업자등록번호:</dt>
+                        <dd>211-81-71889</dd>
+                        <dt>통신판매사업신고:</dt>
+                        <dd>강남 15737호</dd>
+                    </dl>
+                    <a href="#">사업자정보 조회</a>
+                    <p class="copy">COPYRIGHT © LAB SERIES. ALL RIGHTS RESERVED</p>
+                </section>
+                <section class="footLogo">
+                    <h4>LAB<br>SERIES</h4>
+                        <ul class="sns">
+                            <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                </section>
+            </div>
+            <div class="moMenuBtn">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./img/SVG/all.svg" alt="">
+                            <p>카테고리</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/SVG/like.svg" alt="">
+                            <p>좋아요</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/SVG/home.svg" alt="">
+                            <p>홈</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/SVG/login.svg" alt="">
+                            <p>로그인</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/SVG/bag.svg" alt="">
+                            <p>장바구니</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <aside>
+            <ul>
+                <li><a href="#"><img src="./img/SVG/SVG/place.svg" alt="placebutton"></a></li>
+                <li><a href="#"><img src="./img/SVG/SVG/chat.svg" alt="chatbutton"></a></li>
+                <li><a href="#"><img src="./img/SVG/SVG/top.svg" alt="topbutton" class="btntop"></a></li>
+            </ul>
+        </aside>
+</body>
+</html> 
