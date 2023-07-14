@@ -42,10 +42,14 @@ $(document).ready(function(){
        
     })
 
-    // 배경화면눌렀을때 꺼짐 -모바일 
+    //배경화면눌렀을때 꺼짐
     $(".blackcover").click(function(){
             $("nav").removeClass("on")
+            $(".nav").removeClass("on")
+            $(".btnMenu").removeClass("close")
+            $(".gnb").removeClass("show")
             $(".blackcover").removeClass("on")
+    
            
        
     })
