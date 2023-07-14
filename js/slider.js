@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
     //****************** MAIN PAGE SLIDER_1******************
     let mainSlider = new Swiper(".mo_MainStation,.mainStation",{
         breakpoints: {
@@ -27,64 +26,6 @@ $(document).ready(function(){
             }
           }
     })
-    
-    // let count = 0;
-    // let mainPerview;
-    // let mainStationWidth;
-    // let mainWidth = $(window).width();
-    // if(mainWidth>=1204){
-    //     mainPerview = 1;
-
-    // }else{
-    //     mainPerview = 1;
-    // }
-
-    // $(window).resize(function(){
-    //     let mainWidth = $(window).width();
-    //     if(mainWidth>=1024){
-    //         mainPerview = 1;
-    //         mainStationWidth = $(".mainStation").width()
-    //     }else{
-    //         mainPerview = 1;
-    //         mainStationWidth = $(".mainStation").width()
-    //     }
-    // })
-
-    // $(".btnNext").click(function(){
-    //     count++;
-    //     if(count>3){count = 0}
-    // //    $(".train").css("transform","translateX(-"+count*25+"%)")
-    //     slideMove(count)
-    //    $(".train>li").removeClass("on")
-    //    $(".train>li").eq(count).addClass("on")
-    //    $(".pagination>li").removeClass("on")
-    //    $(".pagination>li").eq(count).addClass("on")
- 
-    // })
-    // 다음 버튼을 눌렀을 때
-    // $(".btnNext").click(function(e){
-    //     count++;
-    //     e.preventDefault()
-    //     if(count>2){count = 0}
-    //     slideMove(count)
-    //     $(".mainTrain>li").removeClass("on")
-    //     $(".mainTrain>li").eq(count).addClass("on")
-    //     $(".controlerMain>li").removeClass("on")
-    //     $(".controlerMain>li").eq(count).addClass("on")
-
-    // })
-    // $(".btnPrev").click(function(e){
-    //     count--;
-    //     e.preventDefault()
-    //     if(count<0){count = 0}
-    //     slideMove(count)
-    //     $(".mainTrain>li").removeClass("on")
-    //     $(".mainTrain>li").eq(count).addClass("on")
-    //     $(".controlerMain>li").removeClass("on")
-    //     $(".controlerMain>li").eq(count).addClass("on")
-
-        
-    // })
 
     function slideMove(idx){
         $(".mainTrain,.mo_MainTrain").css("transform","translateX("+(-(100/3)*idx)+"%)")
@@ -273,7 +214,18 @@ $(document).ready(function(){
 
 
     
-    
+    // moblie about slider
+    let mo_aboutSlider = new Swiper(".mo_aboutStation",{
+        autoplay:{
+            delay:3000,
+        },
+        breakpoints:{
+            280:{
+                slidesPerView :1,
+            },
+        }
+    })
+
  
 
 
