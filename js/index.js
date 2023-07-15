@@ -3,7 +3,8 @@ $(document).ready(function(){
     // $(".skinSolution>*").addClass("mTtBaleady")
 
     let menuState = false;
-    $(".btnMenu").click(function(){
+    $(".btnMenu").click(function(e){
+        e.preventDefault()
         //btnMenu 클래스를 클릭했을 때 실행될 동작
         if(menuState == false){
             //메뉴가 현재 닫현 있는 상태 ->여는기능
@@ -23,7 +24,8 @@ $(document).ready(function(){
        
     })
 
-    $(".btnMoMenu").click(function(){
+    $(".btnMoMenu").click(function(e){
+        e.preventDefault()
         //$(선택된태그).hasClass("on")
         //선택한 태그가 on이라는 클래스가 있다면 사용된 자리에 true를 리턴하고 
         //선택한 태그가 on이라는 클래스가 없다면 사용된 자리에 false를 리턴하는 함수
@@ -43,7 +45,8 @@ $(document).ready(function(){
     })
 
     //배경화면눌렀을때 꺼짐
-    $(".blackcover").click(function(){
+    $(".blackcover").click(function(e){
+            e.preventDefault()
             $("nav").removeClass("on")
             $(".nav").removeClass("on")
             $(".btnMenu").removeClass("close")
@@ -55,7 +58,8 @@ $(document).ready(function(){
     })
    
     //********화살표2뎁스열기******* *
-    $(".gnb>li").click(function(){
+    $(".gnb>li").click(function(e){
+        e.preventDefault()
         //리스트 클릭했을 때 내가 클릭한 리스트한테 on클래스가 있다 / 없다 라는 기준이 필요!
         
         if($(this).hasClass("on")==true){

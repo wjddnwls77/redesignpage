@@ -146,10 +146,13 @@ header{
     background: #fff;
     color: #000;
     opacity: 0;
+    pointer-events:none;
     transition: all 0.5s ease 0s;
 }
+
 .gnb.show{
     opacity: 1;
+    pointer-events: auto;
 }
 .gnb>ul{
     display: flex;
@@ -172,6 +175,7 @@ header{
     height: 50px;
     display: flex;
     font-size: 1.2rem;
+
 }
 .gnb>ul>li>a:hover{
     font-weight: 500;

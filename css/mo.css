@@ -1256,6 +1256,7 @@ section{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: none;
 }
 .sub2Btn img.mo_plus{
     display: none;
@@ -1343,6 +1344,7 @@ section{
     background: #9fadb8;
     top: 22%;
     width: 100%;
+    left: 5%;
 }
 
 .line>span.lineTwo {
@@ -1377,11 +1379,16 @@ section{
     bottom:-30px;
     transform: translateX(-50%);
 }
-.aboutLab>h2{
-    font-family:"stencil"; 
+.aboutLab>h2 {
+    font-family: "stencil";
     font-size: 2rem;
     margin-top: 150px;
-    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 0 16px;
 }
 .aboutLab>p{
     font-size: 0.9rem;
