@@ -21,7 +21,6 @@ $(document).ready(function(){
             $(".nav").removeClass("on")
             menuState = false
         }
-       
     })
 
     $(".btnMoMenu").click(function(e){
@@ -87,9 +86,9 @@ $(document).ready(function(){
         // $(this).css("height",(li2deth+1)*50+"px")
     });
 
-    $(".gnb ul").click(function(){
-        return false
-    })
+    // $(".gnb ul").click(function(){
+    //     return false
+    // })
 
 
     //********************SCROLL******************
