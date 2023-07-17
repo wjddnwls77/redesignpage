@@ -3,13 +3,13 @@
 /* header */
 
 .pc{ display: none;}
-header{
+header {
     position: fixed;
     z-index: 1000;
     top: 0;
-    background: #fff;
+    background: linear-gradient(180deg,#ffffffcf,#ffffff99,#ffffff00);
     width: 100%;
-    height:54px;
+    /* height: 54px; */
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -18,10 +18,9 @@ header{
     width: 30px;
     height: 30px;
     margin-right: 10px;
-
 }
 .innerheader{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content:space-between;
@@ -172,12 +171,13 @@ nav.on{
 }
 .mo_MainStation{
     position: relative;
-    width: 90%;
-    height: 65vh;
+    width: 100%;
+    height: 70vh;
     overflow: hidden;
     margin: 0 auto;
-    margin-top: 54px;
+    /* margin-top: 54px; */
     margin-bottom: 50px;
+
 }
 .mo_MainTrain{
     width:300%;
@@ -195,62 +195,55 @@ nav.on{
     height: 100%;
     object-fit: cover;
 }
-.videoBanner video{
-    width:100%;
-    height: 100%;
-    object-fit: cover;
- }
- .mo_MainBanner3 {
+.mo_MainBanner1{
     position: absolute;
     top: 50%;
+    left: 30%;
     transform: translateY(-50%);
     margin-left: 20px;
-
+    text-transform: uppercase;
+    color:#133647;
 }
-.mo_MainBanner3>h2{
-    font-size:1rem;
+.mo_MainBanner1>h2{
+    font-size:1.9rem;
     font-weight: bold;
-    margin-bottom: 20px;
-    width: 110px;
-    
+    margin-bottom: 10px;
 }
-.mo_MainBanner3>p{
-    font-size: 0.9rem;
-    margin-bottom: 20px;
-    width: 130px;
+.mo_MainBanner1>p{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    padding: 0 5px;
 
 }
-.mo_MainBanner3>a{
+.mo_MainBanner1>a{
     display: flex;
-    border: 1px solid black;
-    width: 100px;
+    border: 1px solid#133647;
+    width: 80px;
     height: 25px;
     justify-content: center;
     align-items: center;
     font-size: 0.9rem;
+    margin: 0 auto;
 }
 
-.mo_MainBanner2{
+ .mo_MainBanner2{
     position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translateY(-50%);
+    top: 20%;
+    left: 0%;
     margin-left: 20px;
     text-transform: uppercase;
 
 }
 .mo_MainBanner2>h2{
-    font-size:1rem;
+    font-size:1.8rem;
     font-weight: bold;
     margin-bottom: 20px;
-    width: 110px;
-    
+
 }
 .mo_MainBanner2>p{
-    font-size: 0.9rem;
-    margin-bottom: 20px;
-    width: 130px;
-
+    font-size: 1.2rem;
+    width: 200px;
+    margin-bottom: 15px;
 }
 .mo_MainBanner2>a{
     display: flex;
@@ -259,7 +252,30 @@ nav.on{
     height: 30px;
     justify-content: center;
     align-items: center;
-    font-size: 0.9rem;
+}
+ .mo_MainBanner3 {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+.mo_MainBanner3>h2{
+    font-size:1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.mo_MainBanner3>p{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    width: 150px;
+}
+.mo_MainBanner3>a{
+    display: flex;
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 .moMenuBtn{
@@ -1752,11 +1768,11 @@ section{
     display: flex;
 }
 .pur>a{
-    margin-right: 10px;
+    margin-right: 5px;
 }
 .porductTop h1{
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom:10px ;
 }
 .porductTop>section{
@@ -1764,18 +1780,19 @@ section{
 } 
 .porductTop p{
     margin-bottom: 20px;
+    font-size: 1.1rem;
 }
 .porductTop a{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 30px;
+    width:220px;
+    height: 40px;
     border:1px solid #25434a;
 } 
 
 .tabMenu{
-    width:90%;
+    width:95%;
     height:300px;
     margin: 0 auto;
     position:relative;
@@ -1783,7 +1800,7 @@ section{
     margin-bottom: 20px;
 }
 .tabMenu>dt{
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #003a55;
     cursor: pointer;
     width:100%;
@@ -1810,7 +1827,7 @@ section{
     width: 100%;
     box-sizing: border-box;
     display: none;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #003a55;
     font-weight: 300;
     padding: 10px;
@@ -1978,8 +1995,8 @@ aside{
     z-index: 10;
 }
 aside>ul>li{
-    width: 5px;
-    height: 5px;
+    width: 25px;
+    height: 25px;
     margin-bottom: 5px;
 }
 

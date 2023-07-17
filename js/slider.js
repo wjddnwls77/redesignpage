@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     //****************** MAIN PAGE SLIDER_1******************
-    let mainSlider = new Swiper(".mo_MainStation,.mainStation",{
+    let mainSliderone = new Swiper(".mo_MainStation,.mainStation",{
         breakpoints: {
             // when window width is >= 320px
             320: {

@@ -12,6 +12,7 @@ $(document).ready(function(){
             $(".gnb").addClass("show")
             $(".blackcover").addClass("on")
             $(".nav").addClass("on")
+            $("header").css("background","#fff")
             menuState = true
         }else{
             //메뉴가 현재 열려있는 상태 -> 닫는기능
@@ -19,6 +20,7 @@ $(document).ready(function(){
             $(".gnb").removeClass("show")
             $(".blackcover").removeClass("on")
             $(".nav").removeClass("on")
+            $("header").css("background",'linear-gradient(180deg,#fff,#ffffffd3,#ffffff74)')
             menuState = false
         }
     })
@@ -33,14 +35,12 @@ $(document).ready(function(){
             //메뉴가 닫혀있는 상태 -> 메뉴를 여는 기능
             $("nav").addClass("on")
             $(".blackcover").addClass("on")
-            
         } else{
             //메뉴가 열려있는 상태 -> 메뉴를 닫는 기능
             $("nav").removeClass("on")
             $(".blackcover").removeClass("on")
-           
         }
-       
+
     })
 
     //배경화면눌렀을때 꺼짐
@@ -51,14 +51,12 @@ $(document).ready(function(){
             $(".btnMenu").removeClass("close")
             $(".gnb").removeClass("show")
             $(".blackcover").removeClass("on")
-    
-           
        
     })
    
     //********화살표2뎁스열기******* *
     $(".gnb>li").click(function(e){
-        e.preventDefault()
+        // e.preventDefault()
         //리스트 클릭했을 때 내가 클릭한 리스트한테 on클래스가 있다 / 없다 라는 기준이 필요!
         
         if($(this).hasClass("on")==true){
@@ -85,6 +83,7 @@ $(document).ready(function(){
         // let li2deth = ($(this).children("ul").children().length)
         // $(this).css("height",(li2deth+1)*50+"px")
     });
+
 
     // $(".gnb ul").click(function(){
     //     return false
