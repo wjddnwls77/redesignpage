@@ -169,10 +169,13 @@ nav.on{
 .mainStation{
     display: none;
 }
+.mainTrain{
+    display: none;
+}
 .mo_MainStation{
     position: relative;
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     overflow: hidden;
     margin: 0 auto;
     /* margin-top: 54px; */
@@ -260,12 +263,12 @@ nav.on{
     left: 10px;
 }
 .mo_MainBanner3>h2{
-    font-size:1.5rem;
+    font-size:1.4rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
 .mo_MainBanner3>p{
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 20px;
     width: 150px;
 }
@@ -1381,7 +1384,7 @@ section{
 }
 .aboutLab{
     color:#315C6D ;
-    width: 90%;
+    width: 100%;
     text-align: center;
     position: relative; 
 }
@@ -1416,7 +1419,7 @@ section{
     display: none;
 }
 .aboutLab2 {
-    width: 90%;
+    width: 100%;
     text-align: center;
     color: #315C6D;
     
