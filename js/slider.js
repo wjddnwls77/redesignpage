@@ -30,6 +30,27 @@ $(document).ready(function(){
     function slideMove(idx){
         $(".mainTrain,.mo_MainTrain").css("transform","translateX("+(-(100/3)*idx)+"%)")
     }
+
+
+    // main moblie slider
+    let mo_mainSliderone = new Swiper(".mo_MainStation",{
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 1,
+            },
+            // when window width is >= 480px
+            768: {
+              slidesPerView: 1,
+            }          
+          },
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          
+    })
+
     //*********************SUB1 SLIDER*********************** 
     let subOneCount = 0;
     let perViewsubOne;
