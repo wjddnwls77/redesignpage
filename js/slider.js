@@ -1,30 +1,60 @@
 $(document).ready(function(){
 
+    
+
     //****************** MAIN PAGE SLIDER_1******************
-    let mainSliderone = new Swiper(".mo_MainStation,.mainStation",{
+    let mainSliderone = new Swiper(".mainStation",{
         breakpoints: {
             // when window width is >= 320px
             320: {
-              slidesPerView: 1,
+            slidesPerView: 1,
             },
             // when window width is >= 480px
             768: {
-              slidesPerView: 1,
+            slidesPerView: 1,
             }          
-          },
-          navigation: {
-              nextEl: ".btnNext",
-              prevEl: ".btnPrev",
-          },
-          on: {
+        },
+
+        
+        navigation: {
+            nextEl: ".mainNext",
+            prevEl: ".mainPrev",
+        },
+        pagination: {
+            el: ".mainPage",
+        },
+        autoplay:{
+            delay:3000,
+            // disableOnInteraction: false,
+        },
+        on: {
             slideChange: function () {
-              console.log(this.activeIndex)
-              $(".mainTrain>li").removeClass("on")
-              $(".mainTrain>li").eq(this.activeIndex).addClass("on")
-              $(".controlerMain>li").removeClass("on")
-              $(".controlerMain>li").eq(this.activeIndex).addClass("on")
+            // console.log(this.activeIndex)
+            $(".mainTrain>li").removeClass("on")
+            $(".mainTrain>li").eq(this.activeIndex).addClass("on")
+            $(".controlerMain>li").removeClass("on")
+            $(".controlerMain>li").eq(this.activeIndex).addClass("on")
             }
-          }
+        }
+    })
+
+    console.log(mainSliderone)
+
+    let stateMainPause = false;
+
+    $(".mainPause").click(function(){
+        if(stateMainPause == false){
+            //멈춤
+            mainSliderone.autoplay.pause()
+            stateMainPause = true
+            $(".mainPause").addClass("playbtn")
+        }else{
+            //자동
+            mainSliderone.autoplay.resume()
+            stateMainPause = false
+            $(".mainPause").removeClass("playbtn")
+        }
+        
     })
 
     function slideMove(idx){
@@ -37,18 +67,18 @@ $(document).ready(function(){
         breakpoints: {
             // when window width is >= 320px
             320: {
-              slidesPerView: 1,
+            slidesPerView: 1,
             },
             // when window width is >= 480px
             768: {
-              slidesPerView: 1,
+            slidesPerView: 1,
             }          
-          },
-          autoplay: {
-            delay: 2500,
+    },
+    autoplay: {
+        delay: 2500,
             disableOnInteraction: false,
-          },
-          
+        },
+        
     })
 
     //*********************SUB1 SLIDER*********************** 
@@ -91,8 +121,8 @@ $(document).ready(function(){
     //     e.preventDefault()
     //     if(subOneCount>3){subOneCount = 0}
     //     subOneslider(subOneCount)
-       
-      
+    
+    
     // })
     // $(".subOnePrev").click(function(e){
     //     subOneCount--;
@@ -143,7 +173,7 @@ $(document).ready(function(){
         if(bestCount>(6/perViewBest)+1){bestCount = 0}
         bestslide(bestCount)
         $(".slideLine>div").css("width",(100/6)*(bestCount+perViewBest)+"%")
-      
+    
     })
     $(".bestPrev").click(function(e){
         bestCount--;
@@ -229,12 +259,6 @@ $(document).ready(function(){
     //     })
     // }
     
-
-    
-  
-
-
-    
     // moblie about slider
     let mo_aboutSlider = new Swiper(".mo_aboutStation",{
         autoplay:{
@@ -246,8 +270,27 @@ $(document).ready(function(){
             },
         }
     })
+    let youtubeStation = new Swiper(".youtubeStation",{
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+            slidesPerView: 1,
+            },
+            // when window width is >= 480px
+            768: {
+            slidesPerView: 2.5,
+            }          
+        },
+        autoplay: {
+            delay: 2500,
+        },
+        pagination: {
+            el: ".youtube-pagination",
+        }
+        
+    })
+    
 
- 
 
 
 

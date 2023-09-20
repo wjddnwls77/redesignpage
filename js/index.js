@@ -12,7 +12,7 @@ $(document).ready(function(){
             $(".gnb").addClass("show")
             $(".blackcover").addClass("on")
             $(".nav").addClass("on")
-            $("header").css("background","#fff")
+            // $("header").css("background","#fff")
             menuState = true
         }else{
             //메뉴가 현재 열려있는 상태 -> 닫는기능
@@ -20,7 +20,7 @@ $(document).ready(function(){
             $(".gnb").removeClass("show")
             $(".blackcover").removeClass("on")
             $(".nav").removeClass("on")
-            $("header").css("background",'linear-gradient(180deg,#fff,#ffffffd3,#ffffff74)')
+            // $("header").css("background",'linear-gradient(180deg,#fff,#ffffffd3,#ffffff74)')
             menuState = false
         }
     })
@@ -51,9 +51,8 @@ $(document).ready(function(){
             $(".btnMenu").removeClass("close")
             $(".gnb").removeClass("show")
             $(".blackcover").removeClass("on")
-       
     })
-   
+
     //********화살표2뎁스열기******* *
     $(".gnb>li").click(function(e){
         // e.preventDefault()
@@ -105,10 +104,12 @@ $(document).ready(function(){
     })
     //********************BTNTOP******************
     $(".btntop").click(function(){
-         moveScroll({
-             top:0,
-             speed:1000
-         })
+        moveScroll({
+            top:0,
+            speed:1000
+        })
+            
+        
     })
     function moveScroll(option){
         $("html,body").stop().animate({scrollTop:option.top},option.speed)
@@ -125,9 +126,23 @@ $(document).ready(function(){
 
     setTimeout(function(){
         $(".aboutLab>h2,.aboutLab>p").addClass("on")
-     },1000)
+    },1000)
+
+    setTimeout(function(){
+        $(".mainBanner1>h2,.mainBanner1>p").addClass("on")
+    },1000)
 
     
+    $(".tebmenuSub>dt").click(function(e){
+        e.preventDefault
+        $(".tebmenuSub>dt").removeClass("on")
+        $(this).addClass("on")
+        let dd_height = $(".tebmenuSub dt.on+dd").height()
+        $(".tebmenuSub").height(150+dd_height)
+    })
+
+    let dd_height = $(".tebmenuSub dt.on+dd").height()
+    $(".tebmenuSub").height(150+dd_height)
 
 
 })

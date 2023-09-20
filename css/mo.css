@@ -1195,7 +1195,7 @@ footer{
     padding: 10px 0;
 }
 .mainSub2>p{
-   padding: 10px 0;
+    padding: 10px 0;
 }
 .sub2wrap{
     width: 90%;
@@ -1345,6 +1345,126 @@ section{
 .sub2Pro>ol>li>ul>li>a.purBtn3{
     background: #9fadb8;
 }
+/*********** mainSubBanner2_1 ****************/
+.ls{
+    display: none;
+}
+.mainSubBanner2_1>img{
+    width: 100%;
+    margin-top: 50px;
+}
+.mainSubBanner2_1{
+    position: relative;
+}
+.mainSub2_1 {
+    position: absolute;
+    top: 43%;
+    left: 8%;
+    color: #fff;
+}
+.mainSub2_1>h1{
+    margin-bottom: 20px;
+}
+.mainSub2_1>p{
+    font-size: 0.9rem;
+}
+.selectBtn>h1{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #1c485e;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.selectBtn>.downBtn{
+    display: none;
+}
+#btnThree{
+    display: none;
+}
+.selectPg{
+    /* height: 500px; */
+}
+.tebmenuSub{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.tebmenuSub>dt{
+    font-size: 0.8rem;
+    padding: 8px;
+    height: 20px;
+    display: flex;
+    transition: all 0.5s ease 0s;  
+}
+.tebmenuSub>dt.on{
+    border-bottom: 1.5px solid #1c485e;
+    color: #003a55;
+}
+.tebmenuSub>dd{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    display: none;
+}
+.tebmenuSub>dt.on+dd{
+    display: block;
+} 
+.tebmenuSub>dd>ul{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.tebmenuSub>dd>ul>li{
+    width: 150px;
+    padding: 0 5px;
+    /* height: 150px; */
+    border: 0.5px solid  #99999993;
+}
+
+.tebmenuSub>dd>ul>li img{
+    width: 100%;
+    /* height: 100%; */
+    object-fit: contain;
+
+}
+/* .contentsAll{
+    border: 1px solid lime;
+} */
+.contentsAll>h2{
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+.contentsAll>p{
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+.contentsAll>a{
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    width: 73px;
+    height: 20px;
+    background: #01567d;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.btnB{
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+}
+.btnB img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
 
 /* *********************sub3***************** */
 
@@ -1359,10 +1479,10 @@ section{
     display: block;
     position: absolute;
 }
-.line>span.lineOne{
+.line>span.lineOne {
     background: #9fadb8;
     top: 22%;
-    width: 100%;
+    width: 87%;
     left: 5%;
 }
 
@@ -1388,7 +1508,7 @@ section{
     text-align: center;
     position: relative; 
 }
-.aboutLab::after {
+/* .aboutLab::after {
     content: "";
     position: absolute;
     width: 15px;
@@ -1397,7 +1517,7 @@ section{
     left: 50%;
     bottom:-30px;
     transform: translateX(-50%);
-}
+} */
 .aboutLab>h2 {
     font-family: "stencil";
     font-size: 2rem;
@@ -1408,35 +1528,49 @@ section{
     text-align: center;
     width: 100%;
     padding: 0 16px;
+    opacity: 0;
+    transform: translateY(0px);
+}
+.aboutLab>h2.on {
+    transform: translateY(-30px);
+    opacity: 1;
 }
 .aboutLab>p{
-    font-size: 0.9rem;
     font-weight: 300;
     margin: 100px auto;
     padding: 0 10px;
+    opacity: 0;
+    transform: translateY(0px);
+    transition: all 0.5s ease 0.75s;
 }
 .aboutLab>p.scroller {
     display: none;
+}
+.aboutLab>p.on {
+    transform: translateY(30px);
+    opacity: 1;
 }
 .aboutLab2 {
     width: 100%;
     text-align: center;
     color: #315C6D;
+    margin-bottom: 20px;
     
 }
-.aboutLab2>h2{
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-.aboutLab2>p{
-    font-weight: 300;
-    width: 250px;
-    margin: 0 auto;
-}
+.beautyBg>div>h1{
+    text-transform: uppercase;
+    padding: 5px 0 ;
+} 
 .aboutLab2>img{
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 200px;
     object-fit: contain;
+}
+.proContetents>img{
+    display: none;
+}
+.pomise_Logo>span{
+    margin-left: 20px;
 }
 .promiseContents{
     color:#315C6D ;
@@ -1450,12 +1584,10 @@ section{
     height: 50px;
 }
 .pomise_Logo{
-    display: flex;
-    margin-bottom: 10px;
-    font-size: 1.4rem;
-}
-.pomise_Logo>h3{
-    padding: 0 10px;
+    font-size: 1.8rem;
+    display: inline-block;
+    border-bottom: 1px solid #315C6D ;
+
 }
 .promise{
     margin-bottom: 50px;
@@ -2009,7 +2141,11 @@ aside>ul>li img{
     object-fit: contain;
 }
 
+.youtubeVideo{
+    display: none;
+}
 
+/**********detali **********/
 
 }
 
