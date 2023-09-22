@@ -3469,6 +3469,7 @@
         width: 250px;
         margin: 0 auto;
         margin-bottom: 50px;
+        cursor: pointer;
     }
     .tebmenuSub>dt.on{
         border-bottom: 2px solid #315C6D;
